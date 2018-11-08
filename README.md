@@ -16,3 +16,12 @@ small Javascript class to get Geoid Height from GSI geoid data
 var gm = new GsiGeoid();//インスタンスを作成
 var geoidValue = gm.getGeoid(35.00000,135.00000); //緯度、経度の順
 ⇒37.05534が返ります。
+
+C#の方の利用方法
+コンソールアプリとして実行ファイルを作ります。
+国土地理院からダウンロードしてきたASCII形式のジオイドデータ（例：現行最新は「gsigeo2011_ver2.asc」）を実行ファイルと同一フォルダに置き、
+コマンドプロンプトで
+gsigeoid2Js.exe gsigeo2011_ver2.asc
+とすれば、同一フォルダに gsigeoidmap.js が生成されます。
+
+以上
